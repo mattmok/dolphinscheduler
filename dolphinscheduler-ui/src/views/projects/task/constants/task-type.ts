@@ -53,6 +53,7 @@ export type TaskType =
   | 'LINKIS'
   | 'DATA_FACTORY'
   | 'REMOTESHELL'
+  | 'DATACENTER'
 
 export type TaskExecuteType = 'STREAM' | 'BATCH'
 
@@ -193,6 +194,10 @@ export const TASK_TYPES_MAP = {
   },
   REMOTESHELL: {
     alias: 'REMOTESHELL',
+    helperLinkDisable: true
+  },
+  DATACENTER: {
+    alias: 'DATACENTER',
     helperLinkDisable: true
   }
 } as {

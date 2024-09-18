@@ -454,6 +454,8 @@ interface ITaskParams {
   yarnQueue?: string
   awsRegion?: string
   kubeConfig?: string
+  datacenterTaskId?: string
+  datacenterTaskType?: string
 }
 
 interface INodeData

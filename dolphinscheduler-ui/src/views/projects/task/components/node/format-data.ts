@@ -48,6 +48,11 @@ export function formatParams(data: INodeData): {
     }
   }
 
+  if (data.taskType === 'DATACENTER') {
+    taskParams.datacenterTaskId = data.datacenterTaskId
+    taskParams.datacenterTaskType = data.datacenterTaskType
+  }
+
   if (
     data.taskType &&
     ['SPARK', 'MR', 'FLINK', 'FLINK_STREAM'].includes(data.taskType)

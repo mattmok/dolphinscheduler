@@ -59,6 +59,7 @@ type TaskType =
   | 'LINKIS'
   | 'DATA_FACTORY'
   | 'REMOTESHELL'
+  | 'DATACENTER'
 
 type ProgramType = 'JAVA' | 'SCALA' | 'PYTHON'
 

@@ -160,6 +160,9 @@ export const TASK_TYPES_MAP = {
   REMOTESHELL: {
     alias: 'REMOTESHELL',
     helperLinkDisable: true
+  },
+  DATACENTER: {
+    alias: 'DATACENTER'
   }
 } as {
   [key in TaskType]: {
